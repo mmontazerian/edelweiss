@@ -764,7 +764,7 @@ a {
 }
 
 .grid-s {
-    display: block;
+    display: contents;
 }
 
 .grid--cols-2 {
