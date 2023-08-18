@@ -760,7 +760,15 @@ a {
 
 /* Grids */
 .grid {
-    display: grid;
+    display: block;
+}
+
+.grid-s {
+    display: block;
+}
+
+.grid--cols-2 {
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .grid--cols-4__s {
@@ -768,6 +776,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .grid-s {
+        display: grid;
+    }
+
     .grid--cols-2 {
         grid-template-columns: repeat(2, 1fr);
     }
