@@ -760,7 +760,7 @@ a {
 
 /* Grids */
 .grid {
-    display: block;
+    display: grid;
 }
 
 .grid-s {
