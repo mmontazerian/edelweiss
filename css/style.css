@@ -998,11 +998,9 @@ a {
 /* parallex */
 .parallax-item {
     align-items: center;
-    /* Image URL needs to be change here */
     background: url('../images/img-5.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     min-height: 390px;
     justify-content: center;
