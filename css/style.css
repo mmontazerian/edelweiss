@@ -1499,54 +1499,6 @@ a {
     padding: 0;
 }
 
-/* Tab content styles */
-.tab-content .tab-pane {
-    padding: 2rem 0;
-}
-
-.nav-tabs__list {
-    display: block;
-    border-bottom: 1px solid var(--color-primary);
-    background-color: var(--color-primary);
-    color: var(--color-primary);
-    text-align: center;
-    font-family: Avenir;
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 44px;
-    /* 171.429% */
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-}
-
-.nav-tabs__list.active:nth-child(1) {
-    background-color: var(--color-body);
-    border: 1px solid var(--color-primary);
-}
-
-.nav-tabs__list.active:nth-child(2) {
-    background-color: var(--color-body);
-    border-left: 1px solid var(--color-primary);
-    border-right: 1px solid var(--color-primary);
-}
-
-.nav-tabs__list.active:nth-child(3) {
-    background-color: var(--color-body);
-    border-left: 1px solid var(--color-primary);
-    border-right: 1px solid var(--color-primary);
-    border-bottom: 1px solid var(--color-primary);
-}
-
-.nav-tabs__list a {
-    color: var(--color-body);
-}
-
-.nav-tabs__list.active a {
-    color: var(--color-primary);
-}
-
-
 /* Tab navigation styles */
 
 .nav-tabs {
@@ -1561,7 +1513,7 @@ a {
 
 .nav-tabs__list {
     display: block;
-    border-bottom: 1px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-body);
     background-color: var(--color-primary);
     color: var(--color-primary);
     text-align: center;
@@ -1592,6 +1544,10 @@ a {
     border-bottom: 1px solid var(--color-primary);
 }
 
+.nav-tabs__list.active:last-child {
+    border-bottom: 0.1px solid var(--color-primary);
+}
+
 .nav-tabs__list a {
     color: var(--color-body);
 }
@@ -1600,6 +1556,11 @@ a {
     color: var(--color-primary);
 }
 
+@media screen and (min-width: 768px) {
+    .nav-tabs__list {
+        border-bottom: 1px solid var(--color-primary);
+    }
+}
 
 /* Hide all tab panes by default except the active one */
 .tab-pane {
